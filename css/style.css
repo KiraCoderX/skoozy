@@ -205,37 +205,6 @@ nav {
   color: #ffffff;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .banner-content h2 {
-    font-size: 2.2rem;
-  }
-
-  .banner-content p {
-    font-size: 1.1rem;
-  }
-}
-
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-  .home-banner {
-    height: 70vh;
-  }
-
-  .banner-content h2 {
-    font-size: 2.2rem;
-  }
-
-  .banner-content p {
-    font-size: 1.1rem;
-  }
-}
-
-
-/* ================= WHAT IS SKOOZY ================= */
-
 /* ================= WHAT IS SKOOZY ================= */
 
 .what-skoozy {
@@ -312,23 +281,6 @@ nav {
   font-size: 1.05rem;
   color: #475569;
   line-height: 1.6;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  .what-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .what-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .what-title {
-    font-size: 2rem;
-  }
 }
 
 
@@ -412,18 +364,6 @@ nav {
   margin-top: 45px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  .how-it-steps {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .step-line {
-    display: none;
-  }
-}
-
 
 
 /* ================= THE SKOOZY EFFECT ================= */
@@ -502,23 +442,6 @@ nav {
   line-height: 1.6;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .effect-item {
-    flex-direction: column;
-  }
-
-  .effect-icon {
-    margin-bottom: 0.6rem;
-  }
-
-  .effect-title {
-    font-size: 2.2rem;
-  }
-}
-
-
-
 /* ================= OPERATING REGIONS ================= */
 
 .operating-section {
@@ -550,17 +473,6 @@ nav {
   margin: auto;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .operating-title {
-    font-size: 2rem;
-  }
-
-  .operating-subtitle {
-    font-size: 1.05rem;
-  }
-}
-
 
 /* Image */
 .skoozy-effect-image img {
@@ -570,22 +482,6 @@ nav {
   display: block;
   margin: auto;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .skoozy-effect-title {
-    font-size: 2rem;
-  }
-
-  .skoozy-effect-subtitle {
-    font-size: 1.05rem;
-  }
-
-  .skoozy-effect-image {
-    padding: 1.5rem;
-  }
-}
-
 
 
 /* ================= Call To Action SECTION ================= */
@@ -659,14 +555,6 @@ nav {
 .btn-outline-cta:hover {
   background: #ffffff;
   color: #2563eb;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-  .cta-title {
-    font-size: 1.8rem;
-  }
 }
 
 
@@ -802,32 +690,8 @@ nav {
 .footer-legal span {
   color: #cbd5e1;
 }
+ 
 
-
-
-/* ================= FOOOTER RESPONSIVE ================= */
-
-@media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .brand-desc {
-    margin: auto;
-  }
-
-  .brand-row {
-    justify-content: center;
-  }
-}  
 
 
 
@@ -936,24 +800,6 @@ nav {
   transform: translateY(-2px);
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .demo-container {
-    padding: 2.5rem;
-  }
-
-  .demo-form {
-    grid-template-columns: 1fr;
-  }
-
-  .form-group.full,
-  .form-action {
-    grid-column: span 1;
-  }
-}
-
-
-
 
 /* ================= CONTACT ================= */
 
@@ -1052,19 +898,6 @@ nav {
   font-size: 14px;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-  .contact-right form {
-    grid-template-columns: 1fr;
-  }
-  .form-group.full,
-  .form-action {
-    grid-column: span 1;
-  }
-}
 
 /* ================= SOCIAL LINKS ================= */
 
@@ -1129,16 +962,7 @@ nav {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,.12);
 }
-  
-@media (max-width: 900px) {
-  .follow-container {
-    grid-template-columns: 1fr;
-  }
 
-  .follow-text h2 {
-    font-size: 1.6rem;
-  }
-}
 
 
 
@@ -1213,17 +1037,25 @@ nav {
   transform: translateX(6px);
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
 
-  .contact-card {
-    padding: 3rem;
-  }
 
-  .contact-card h2 {
-    font-size: 2.4rem;
+
+
+/* ===== Mobile Responsive ===== */
+/* ===== SCALE SITE FOR SMALL SCREENS — KEEP DESKTOP DESIGN ===== */
+
+.site-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .site-wrapper {
+    transform: scale(calc(100vw / 1200));
+    transform-origin: top left;
+    width: 1200px;
+    height: auto;
   }
 }
+
