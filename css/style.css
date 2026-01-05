@@ -1037,25 +1037,31 @@ nav {
   transform: translateX(6px);
 }
 
-
-
-
-
-/* ===== Mobile Responsive ===== */
-/* ===== SCALE SITE FOR SMALL SCREENS — KEEP DESKTOP DESIGN ===== */
-
-.site-wrapper {
-  width: 1200px;
+/* ===== KEEP DESKTOP LAYOUT — AUTO SHRINK ON SMALL SCREENS ===== */
+body {
+  max-width: 1200px;
   margin: 0 auto;
+  transform-origin: top center;
 }
 
-/* Tablets */
 @media (max-width: 1200px) {
-  .site-wrapper {
+  body {
     transform: scale(calc(100vw / 1200));
-    transform-origin: top left;
-    width: 1200px;
-    height: auto;
+    height: calc(100vh / (100vw / 1200));
+    overflow-x: hidden !important;
   }
 }
 
+@media (max-width: 1200px) {
+  header {
+    height: 70px;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  nav {
+    padding: .5rem 1rem;
+  }
+}
