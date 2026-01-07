@@ -169,8 +169,16 @@ padding: 10px 20px;
   .banner-content h2 {
     font-size: 5rem;
     font-weight: 500;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5.5rem;
     max-width: 100%;
+  }
+
+  .banner-text{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 18px;
   }
   
   .banner-content p {
