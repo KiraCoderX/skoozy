@@ -160,9 +160,9 @@ padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;   /* center vertically */
-    align-items: center;       /* center horizontally */
-    text-align: center;        /* center text */
-    padding: 0 2rem;           /* remove left push */
+    align-items: flex-start;       /* center horizontally */
+    text-align: left;        /* center text */
+    padding: 0 4rem;           /* remove left push */
     color: #000;
 }
   
